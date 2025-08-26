@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marques Tech Solutions - Serviços de TI Profissionais</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="font-sans bg-gray-50">
+
+        <header class="bg-white shadow-md sticky top-0 z-50">
+            <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-laptop-code text-blue-600 text-2xl"></i>
+                    <span class="text-xl font-bold text-gray-800">Marques Tech Solutions</span>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition">Início</a>
+                    <a href="#servicos" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition">Serviços</a>
+                    <a href="#sobre" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition">Sobre Nós</a>
+                    <a href="#contato" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition">Contato</a>
+                </nav>
+                
+                <button class="md:hidden text-gray-700" id="menu-toggle">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden bg-white w-full py-4 px-4 shadow-lg" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="#inicio" class="text-gray-700 hover:text-blue-600 font-medium">Início</a>
+                    <a href="#servicos" class="text-gray-700 hover:text-blue-600 font-medium">Serviços</a>
+                    <a href="#sobre" class="text-gray-700 hover:text-blue-600 font-medium">Sobre Nós</a>
+                    <a href="#contato" class="text-gray-700 hover:text-blue-600 font-medium">Contato</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-gradient text-white py-20">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Soluções em TI para o seu negócio</h1>
+                    <p class="text-xl mb-8 text-blue-100">Oferecemos serviços especializados em tecnologia da informação para impulsionar sua empresa.</p>
+                    <a href="#servicos" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition duration-300 inline-block">Nossos Serviços</a>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Equipe de TI trabalhando" class="rounded-lg shadow-2xl max-w-md w-full">
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços Section -->
+        <section id="servicos" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Nossos Serviços de TI</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Oferecemos soluções completas em tecnologia da informação para empresas de todos os portes.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Serviço 1 -->
+                    <div class="service-card bg-white rounded-xl shadow-lg p-6 transition duration-300 border border-gray-100">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-tools text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Manutenção de Computadores</h3>
+                        <p class="text-gray-600 mb-4">Serviços de reparo, atualização e manutenção preventiva para desktops, notebooks e workstations.</p>
+                        <ul class="text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Diagnóstico de hardware</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Limpeza interna</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Substituição de peças</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Otimização de desempenho</li>
+                        </ul>
+                        <a href="#contato" class="text-blue-600 font-medium hover:text-blue-700 inline-flex items-center">Solicitar orçamento <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                    
+                    <!-- Serviço 2 -->
+                    <div class="service-card bg-white rounded-xl shadow-lg p-6 transition duration-300 border border-gray-100">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-headset text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Suporte ao Usuário</h3>
+                        <p class="text-gray-600 mb-4">Atendimento técnico especializado para resolver problemas dos usuários de forma rápida e eficiente.</p>
+                        <ul class="text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Suporte remoto e presencial</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Configuração de softwares</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Treinamento de usuários</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Help desk especializado</li>
+                        </ul>
+                        <a href="#contato" class="text-blue-600 font-medium hover:text-blue-700 inline-flex items-center">Solicitar orçamento <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                    
+                    <!-- Serviço 3 -->
+                    <div class="service-card bg-white rounded-xl shadow-lg p-6 transition duration-300 border border-gray-100">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-server text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Infraestrutura de TI</h3>
+                        <p class="text-gray-600 mb-4">Projeto, implementação e manutenção de toda a infraestrutura tecnológica da sua empresa.</p>
+                        <ul class="text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Virtualização de servidores</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Cloud computing</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Backup e recuperação</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Data center management</li>
+                        </ul>
+                        <a href="#contato" class="text-blue-600 font-medium hover:text-blue-700 inline-flex items-center">Solicitar orçamento <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                    
+                    <!-- Serviço 4 -->
+                    <div class="service-card bg-white rounded-xl shadow-lg p-6 transition duration-300 border border-gray-100">
+                        <div class="text-blue-600 mb-4">
+                            <i class="fas fa-network-wired text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Redes e Conectividade</h3>
+                        <p class="text-gray-600 mb-4">Soluções completas em redes de computadores para garantir comunicação segura e estável.</p>
+                        <ul class="text-gray-600 space-y-2 mb-4">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Cabeamento estruturado</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Configuração de roteadores</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Segurança de rede</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Monitoramento 24/7</li>
+                        </ul>
+                        <a href="#contato" class="text-blue-600 font-medium hover:text-blue-700 inline-flex items-center">Solicitar orçamento <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Nós Section -->
+        <section id="sobre" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Nossa equipe" class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-6">Sobre a TechSolutions</h2>
+                        <p class="text-gray-600 mb-4">Fundada em 2010, a TechSolutions é uma empresa especializada em serviços de tecnologia da informação, comprometida em oferecer soluções personalizadas para cada cliente.</p>
+                        <p class="text-gray-600 mb-6">Nossa equipe é composta por profissionais certificados e experientes, prontos para atender desde pequenas empresas até grandes corporações.</p>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-8">
+                            <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                                <h3 class="font-bold text-blue-600 mb-2">+500</h3>
+                                <p class="text-gray-600">Clientes atendidos</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                                <h3 class="font-bold text-blue-600 mb-2">+15</h3>
+                                <p class="text-gray-600">Anos de experiência</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                                <h3 class="font-bold text-blue-600 mb-2">24/7</h3>
+                                <p class="text-gray-600">Suporte disponível</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                                <h3 class="font-bold text-blue-600 mb-2">100%</h3>
+                                <p class="text-gray-600">Satisfação garantida</p>
+                            </div>
+                        </div>
+                        
+                        <a href="#contato" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition duration-300 inline-block">Fale Conosco</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">O que nossos clientes dizem</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">A satisfação dos nossos clientes é nossa maior recompensa.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"A TechSolutions revolucionou nossa infraestrutura de TI. Agora temos um sistema estável e seguro que suporta nosso crescimento."</p>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Carlos Mendes</h4>
+                                <p class="text-gray-500 text-sm">Diretor - Empresa XYZ</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"O suporte técnico é excepcional. Resolvem nossos problemas rapidamente e os técnicos são muito profissionais e educados."</p>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Ana Paula Silva</h4>
+                                <p class="text-gray-500 text-sm">Gerente - ABC Comércio</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-100">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Migramos toda nossa operação para a nuvem com a TechSolutions. O processo foi tranquilo e agora temos mais flexibilidade."</p>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 text-blue-600 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Roberto Almeida</h4>
+                                <p class="text-gray-500 text-sm">CEO - Startup Inova</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section id="contato" class="py-16 bg-gray-800 text-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">Entre em Contato</h2>
+                    <p class="text-gray-300 max-w-2xl mx-auto">Estamos prontos para ajudar sua empresa com soluções em TI.</p>
+                </div>
+                
+                <div class="flex flex-col md:flex-row gap-10">
+                    <div class="md:w-1/2 flex flex-col items-center justify-center">
+                        <div class="text-center mb-8">
+                            <i class="fab fa-whatsapp text-6xl text-green-500 mb-4"></i>
+                            <h3 class="text-2xl font-bold mb-4">Fale conosco pelo WhatsApp</h3>
+                            <p class="text-gray-300 mb-6">Respondemos rapidamente durante o horário comercial.</p>
+                            <a href="https://wa.me/5511910265882" class="bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg transition duration-300 inline-flex items-center">
+                                <i class="fab fa-whatsapp mr-3 text-xl"></i> Enviar Mensagem
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2">
+                        <div class="bg-gray-700 p-6 rounded-lg h-full">
+                            <h3 class="text-xl font-bold mb-6">Informações de Contato</h3>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="text-blue-400 mt-1 mr-4">
+                                        <i class="fas fa-map-marker-alt text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold">Endereço</h4>
+                                        <p class="text-gray-300">Av. Paulista, 1000<br>São Paulo - SP, 01310-100</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="text-blue-400 mt-1 mr-4">
+                                        <i class="fas fa-phone-alt text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold">Telefone</h4>
+                                        <p class="text-gray-300">(11) 9102-65882<br>WhatsApp disponível</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="text-blue-400 mt-1 mr-4">
+                                        <i class="fas fa-envelope text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold">E-mail</h4>
+                                        <p class="text-gray-300">contato@techsolutions.com.br<br>suporte@techsolutions.com.br</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <div class="text-blue-400 mt-1 mr-4">
+                                        <i class="fas fa-clock text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold">Horário de Atendimento</h4>
+                                        <p class="text-gray-300">Segunda a Sexta: 8h às 18h<br>Sábado: 9h às 13h<br>Plantão 24h para clientes contratados</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <h4 class="font-bold mb-4">Siga-nos</h4>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="bg-gray-600 hover:bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="bg-gray-600 hover:bg-blue-400 text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="bg-gray-600 hover:bg-pink-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#" class="bg-gray-600 hover:bg-blue-700 text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-gray-400 py-8">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-6 md:mb-0">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-laptop-code text-blue-600 text-2xl"></i>
+                            <span class="text-xl font-bold text-white">Marques Tech Solutions</span>
+                        </div>
+                        <p class="mt-2">Soluções em Tecnologia da Informação</p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center md:items-end">
+                        <p>&copy; 2023 Marques Tech Solutions. Todos os direitos reservados.</p>
+                        <div class="mt-2 flex space-x-4">
+                            <a href="#" class="hover:text-white transition">Termos de Serviço</a>
+                            <a href="#" class="hover:text-white transition">Política de Privacidade</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
